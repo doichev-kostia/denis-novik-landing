@@ -1,0 +1,32 @@
+@import "./src/scss/variables";
+
+@mixin flexSpaceBetween{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumnCenter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin heading{
+  font-size: 34px;
+  line-height: 42px;
+  color: $heading-color;
+}
+
+@mixin text{
+  font-size: 18px;
+  line-height: 22px;
+  color: $text-color;
+}

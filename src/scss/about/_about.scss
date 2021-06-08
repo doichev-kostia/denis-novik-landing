@@ -1,0 +1,27 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+.about {
+  background-color: $section-background-color;
+  padding-top: 81px;
+  padding-bottom: 76px;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__heading {
+    @include heading;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    text-align: center;
+    @include text;
+  }
+
+  &__text:not(:last-child) {
+    padding-bottom: 50px;
+  }
+}

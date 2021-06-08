@@ -1,0 +1,142 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  min-height: 60px;
+  background-color: transparent;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__menu {
+
+  }
+
+}
+
+.menu {
+
+  &__burger {
+    display: block;
+    position: relative;
+    width: 33px;
+    height: 18px;
+    margin-top: 68px;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+
+    span,
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background-color: #000000;
+      height: 4px;
+      transition: .5s;
+    }
+
+    span {
+      top: 50%;
+      transform: scale(1) translate(0, -50%);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+
+    &.active {
+
+      &::before,
+      &::after{
+        background-color: $nav-link-color;
+      }
+
+      span {
+        transform: scale(0);
+      }
+
+      &::before {
+        top: 50%;
+        transform: translate(0, -50%)rotate(45deg);
+      }
+
+      &::after {
+        bottom: 50%;
+        transform: translate(0, 50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__body {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    transition: right .5s;
+    box-sizing: border-box;
+    overflow: auto;
+
+    &.active {
+      right: 0;
+
+      &::before{
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 60px;
+        background-color: #FFFFFF;
+        z-index: 2;
+      }
+    }
+
+  }
+
+
+  &__list {
+
+    padding: 62px 26px 20px;
+  }
+
+  &__item {
+    margin-bottom: 58px;
+  }
+
+  &__link {
+    color: $nav-link-color;
+    font-size: 34px;
+    line-height: 42px;
+
+    &:active, &:hover {
+      color: $nav-active-link-color;
+    }
+
+  }
+
+}
+
+@import "src/scss/header/media";

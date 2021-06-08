@@ -1,0 +1,61 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+
+.skills {
+  padding-top: 83px;
+  padding-bottom: 98px;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__heading {
+    @include heading;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    @include text;
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    @include flexColumnCenter;
+  }
+
+  &__item:not(:last-child){
+    margin-bottom: 80px;
+  }
+
+}
+
+.skill-card {
+  @include flexColumnCenter;
+
+  &__picture {
+    @include flexCenter;
+    width: 90px;
+    height: 90px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 17px;
+    color: $skills-card-description-color;
+    margin-bottom: 40px;
+  }
+
+}
+
+.rate{
+  @include flexCenter;
+}
+

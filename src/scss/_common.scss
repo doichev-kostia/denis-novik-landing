@@ -1,0 +1,29 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+
+.common-styles{
+  font-family: sans-serif;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.wrapper{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.lock-screen {
+  overflow: hidden;
+}
+
+.content{
+  margin-top: 60px;
+}
+

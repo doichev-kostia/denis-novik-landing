@@ -1,84 +1,14 @@
-/*common styles*/
-.common-styles{
-    font-family: sans-serif;
-    color: black;
-}
+@import "reset";
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+@import "src/scss/header/header";
+@import "src/scss/bio/bio";
+@import "src/scss/about/about";
+@import "src/scss/skills/skills";
+@import "src/scss/portfolio/portfolio";
+@import "src/scss/footer/footer";
 
-.link{
-    text-decoration: none;
-    color: black;
-}
-
-.list{
-    list-style-type: none;
-}
-
-.wrapper{
-    max-width: 940px;
-    margin: 0 auto;
-}
-/*common styles*/
-
-/*header*/
-.header-nav{
-    padding-bottom: 32px;
-    border-bottom:1px solid #828282;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-}
-
-.header-nav-list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    margin-top: 33px;
-    padding-left: 0;
-}
-
-.header-nav-list-item{
-    font-size: 18px;
-    font-weight: bolder;
-    line-height: 22px;
-    color: #828282;
-}
-
-.header-nav-list-item:hover{
-    color: #070707;
-}
-
-.header-designer-description{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    position: relative;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-.header-logo{
-    margin:0;
-    max-width: 5ch;
-    color: #070707;
-    font-size: 47.3392px;
-    line-height: 59px;
-}
-
-.header-designer-description-paragraph{
-    margin: 0;
-    padding-bottom: 7px;
-    text-align: left;
-    font-size: 18px;
-    line-height: 22px;
-    color: #070707;
-}
-
-.header-language-changing{
-    transform: rotate(-90deg);
-    margin: 0;
-    position: relative;
-    right: 0;
-    bottom: 31px;
-}
 
 .language{
     font-size: 16px;
@@ -174,14 +104,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.svg-star{
-    fill: #070707;
-}
-
-.svg-star-grey{
-    fill: #E5E5E5;
 }
 
 .section-portfolio{

@@ -1,0 +1,17 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+@media (min-width: 767px) {
+  .menu{
+
+    &__list{
+      @include flexCenter;
+      gap: 0 0.5em;
+    }
+
+    &__item{
+      padding: 10px 0;
+    }
+  }
+}

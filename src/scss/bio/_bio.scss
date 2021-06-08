@@ -1,0 +1,36 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+
+.bio{
+  padding-bottom: 83px;
+
+  &__inner{
+
+  }
+
+  &__credentials{
+
+  }
+
+  &__name{
+    @include heading;
+    max-width: 7ch;
+    margin-bottom: 23px;
+  }
+
+  &__details{
+    @include text;
+    margin-bottom: 35px;
+  }
+
+  &__picture{
+    display: block;
+
+    img, source{
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
