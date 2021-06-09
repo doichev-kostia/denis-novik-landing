@@ -1,3 +1,46 @@
 @import "src/scss/variables";
 @import "src/scss/mixins";
 @import "src/scss/common";
+
+
+.portfolio{
+  background-color: $section-background-color;
+  padding: 80px 0;
+
+  &__inner{
+    text-align: center;
+  }
+
+  &__heading{
+    @include heading;
+    margin-bottom: 65px;
+  }
+
+  &__list{
+    @include flexColumnCenter;
+  }
+
+  &__item:not(:last-child){
+    margin-bottom: 78px;
+  }
+}
+
+.portfolio-card{
+  @include flexColumnCenter;
+
+  &__picture{
+    width: 100%;
+
+    img{
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__link{
+    @include text;
+    padding-top: 35px;
+    text-decoration: underline;
+  }
+
+}

@@ -1,3 +1,78 @@
 @import "src/scss/variables";
 @import "src/scss/mixins";
 @import "src/scss/common";
+
+.footer {
+  padding-top: 82px;
+  padding-bottom: 90px;
+
+  &__inner {
+    @include flexColumnCenter;
+
+  }
+
+}
+
+.contacts {
+  @include flexColumnCenter;
+  text-align: center;
+
+  &__heading {
+    @include heading;
+    margin-bottom: 27px;
+  }
+
+  &__text {
+    @include text;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__btn {
+    @include resetButtonStyles;
+    @include text;
+    width: clamp(180px, 100%, 410px);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+
+  &__list {
+    padding: 0;
+    margin-bottom: 48px;
+    width: clamp(280px, 100%, 410px);
+  }
+
+  &__promo{
+    @include text;
+    color: $nav-link-color;
+  }
+
+  &__link{
+    @include text;
+    color: $nav-link-color;
+
+    &:hover{
+      color: #333333;
+    }
+  }
+}
+
+.social-media {
+  @include flexSpaceBetween;
+
+  &__link{
+    display: block;
+  }
+
+  &__item {
+    flex-grow: 1;
+    @include flexCenter;
+  }
+
+}
+

@@ -30,3 +30,9 @@
   line-height: 22px;
   color: $text-color;
 }
+
+@mixin resetButtonStyles {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
