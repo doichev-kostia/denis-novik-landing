@@ -1,0 +1,20 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+
+@media (min-width: $tablet) {
+  .skills {
+    padding-top: 91px;
+    padding-bottom: 110px;
+
+    &__list{
+      @include flexSpaceBetween;
+      text-align: center;
+      flex-grow: 1;
+      max-width: 938px;
+      align-items: flex-start;
+      flex-direction: row;
+    }
+  }
+}

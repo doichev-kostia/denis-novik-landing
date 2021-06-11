@@ -17,11 +17,15 @@
   }
 
   &__content {
-    text-align: center;
     @include text;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 485px;
   }
 
   &__text:not(:last-child) {
     padding-bottom: 50px;
   }
 }
+
+@import "src/scss/about/media";

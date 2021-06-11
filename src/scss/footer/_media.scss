@@ -1,0 +1,14 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+@media (min-width: $tablet) {
+  .contacts{
+    padding-top: 114px;
+    padding-bottom: 123px;
+
+    &__btn{
+      width: 180px;
+    }
+  }
+}

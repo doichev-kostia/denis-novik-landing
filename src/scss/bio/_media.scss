@@ -1,0 +1,18 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+@import "src/scss/common";
+
+.bio{
+  padding-top: 40px;
+  padding-bottom: 104px;
+
+
+  &__credentials{
+    @include flexSpaceBetween;
+  }
+
+  &__name{
+    font-size: 48px;
+    line-height: 59px;
+  }
+}

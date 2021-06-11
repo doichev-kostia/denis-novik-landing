@@ -1,6 +1,11 @@
 @import "src/scss/variables";
 @import "src/scss/mixins";
 
+html, body{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 .common-styles{
   font-family: sans-serif;
   color: black;
@@ -27,3 +32,16 @@ ul{
   margin-top: 60px;
 }
 
+
+@media (min-width: $desktop) {
+  .wrapper{
+    max-width: 940px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+  .content{
+    margin-top: 88px;
+  }
+}

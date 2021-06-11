@@ -23,6 +23,7 @@
 
   &__list {
     @include flexColumnCenter;
+    margin: 0 auto;
   }
 
   &__item:not(:last-child){
@@ -59,4 +60,6 @@
 .rate{
   @include flexCenter;
 }
+
+@import "./src/scss/skills/media";
 
