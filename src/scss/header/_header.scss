@@ -101,17 +101,6 @@
 
     &.active {
       right: 0;
-
-      &::before{
-        content: '';
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 60px;
-        background-color: #FFFFFF;
-        z-index: 2;
-      }
     }
 
   }
